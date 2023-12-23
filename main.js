@@ -53,4 +53,18 @@ xhr.onreadystatechange = () => {
 xhr.open('GET', url);
 xhr.send();
 
+//
+
+xhr.open('GET', 'data.json', true);
+xhr.setRequestHeader('Content-Type', 'application/json');
+xhr.onload = function() {
+  if (xhr.status === 200) {
+    var jsonData = JSON.parse(xhr.responseText);
+    console.log('Данные в виде JS обьекта:');
+    console.log(jsonData);
+  }
+};
+
+xhr.send();
+
 
