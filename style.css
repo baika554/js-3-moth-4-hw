@@ -1,0 +1,15 @@
+
+.card {
+    border: 2px solid #a2ff00;
+    background: #538ed3;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    display: inline-block;
+}
+
+.container {
+    text-align: center;
+}
+
